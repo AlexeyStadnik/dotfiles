@@ -22,3 +22,9 @@ alias nis='npm i -S'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
 alias gcb='./gradlew clean build'
 alias dps='docker ps'
+# -------
+# Java
+# -------
+alias j11='sdk use java 11.0.2-open'
+alias j12='sdk use java 12.0.2-open'
+alias j14='sdk use java 14.0.1-open'
