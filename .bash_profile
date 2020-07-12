@@ -2,6 +2,12 @@ function mkcd()
 {
 	mkdir $1 && cd $1
 }
+
+function dsr()
+{
+   docker stop $1 && docker rm $1
+}
+
 # -------
 # Aliases
 # -------
@@ -15,3 +21,4 @@ alias run='npm run'
 alias nis='npm i -S'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
 alias gcb='./gradlew clean build'
+alias dps='docker ps'
